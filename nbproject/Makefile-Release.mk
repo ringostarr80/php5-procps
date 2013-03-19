@@ -34,7 +34,8 @@ include php5-procps-Makefile.mk
 OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
-OBJECTFILES=
+OBJECTFILES= \
+	${OBJECTDIR}/procps.o
 
 
 # C Compiler Flags
@@ -62,6 +63,11 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libphp5-procps.a: ${OBJECTFILES}
 	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libphp5-procps.a
 	${AR} -rv ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libphp5-procps.a ${OBJECTFILES} 
 	$(RANLIB) ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libphp5-procps.a
+
+${OBJECTDIR}/procps.o: procps.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.c) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/procps.o procps.c
 
 # Subprojects
 .build-subprojects:

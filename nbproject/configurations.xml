@@ -4,14 +4,18 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>php_procps.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
+      <itemPath>README.md</itemPath>
+      <itemPath>config.m4</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>procps.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -33,9 +37,35 @@
         <compilerSet>default</compilerSet>
       </toolsSet>
       <compileType>
+        <cTool>
+          <incDir>
+            <pElem>/usr/include/php5</pElem>
+            <pElem>/usr/include/php5/main</pElem>
+            <pElem>/usr/include/php5/Zend</pElem>
+            <pElem>/usr/include/php5/TSRM</pElem>
+            <pElem>/usr/include/php5/ext</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>/usr/include/php5</pElem>
+            <pElem>/usr/include/php5/main</pElem>
+            <pElem>/usr/include/php5/Zend</pElem>
+            <pElem>/usr/include/php5/TSRM</pElem>
+            <pElem>/usr/include/php5/ext</pElem>
+          </incDir>
+        </ccTool>
         <archiverTool>
         </archiverTool>
       </compileType>
+      <item path="README.md" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="config.m4" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="php_procps.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="procps.c" ex="false" tool="0" flavor2="0">
+      </item>
     </conf>
     <conf name="Release" type="3">
       <toolsSet>
@@ -58,6 +88,14 @@
         <archiverTool>
         </archiverTool>
       </compileType>
+      <item path="README.md" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="config.m4" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="php_procps.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="procps.c" ex="false" tool="0" flavor2="0">
+      </item>
     </conf>
   </confs>
 </configurationDescriptor>

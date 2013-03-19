@@ -251,7 +251,7 @@ ZEND_FUNCTION(readproctab)
 				add_assoc_long(subarray, "vm_rss", tmpproc->vm_rss);
 				add_assoc_long(subarray, "vm_size", tmpproc->vm_size);
 				add_assoc_long(subarray, "vm_stack", tmpproc->vm_stack);
-				add_assoc_long(subarray, "vm_swap", tmpproc->vm_swap);
+				//add_assoc_long(subarray, "vm_swap", tmpproc->vm_swap);
 			}
 
 			if (options & PROC_FILLSTAT) {
@@ -306,9 +306,9 @@ ZEND_FUNCTION(readproctab)
 			add_assoc_long(subarray, "rtprio", tmpproc->rtprio);
 			add_assoc_long(subarray, "processor", tmpproc->processor);
 			add_assoc_long(subarray, "pcpu", tmpproc->pcpu);
-			add_assoc_long(subarray, "min_delta", tmpproc->min_delta);
+			//add_assoc_long(subarray, "min_delta", tmpproc->min_delta);
 			add_assoc_long(subarray, "maj_flt", tmpproc->maj_flt);
-			add_assoc_long(subarray, "maj_delta", tmpproc->maj_delta);
+			//add_assoc_long(subarray, "maj_delta", tmpproc->maj_delta);
 			add_assoc_long(subarray, "lrs", tmpproc->lrs);
 			add_assoc_long(subarray, "kstk_esp", tmpproc->kstk_esp);
 			add_assoc_long(subarray, "kstk_eip", tmpproc->kstk_eip);
