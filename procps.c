@@ -290,9 +290,9 @@ ZEND_FUNCTION(readproctab)
 
 			}
 
-			if (options && PROC_FILLOOM) {
-				add_assoc_long(subarray, "start_stack", tmpproc->start_stack);
-			}
+			//if (options && PROC_FILLOOM) {
+			//	add_assoc_long(subarray, "start_stack", tmpproc->start_stack);
+			//}
 
 			//*
 			//add_assoc_string(subarray, "cgroup", *tmpproc->cgroup, 1);
